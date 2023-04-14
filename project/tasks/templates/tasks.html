@@ -6,10 +6,11 @@
 
 {% for task in tasks %}
 
-<li>{{ task }}</li>
+<ol>{{ task }}</ol>
 
 
 {% endfor %}
-<a href="{% url 'tasks:add' %}">Add new task</a> 
+<a href="{% url 'tasks:add' %}">Add new task</a><br>
+<a href="{% url 'tasks:ongeza' %}">Add ongeza</a>
 
 {% endblock %}
